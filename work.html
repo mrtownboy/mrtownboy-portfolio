@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>work</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="work.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#chat">Chat now</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="index.html">Anand Kadam</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">About</a></li>
+          <li><a href="#work" onclick="toggleMenu()">work</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <div class="work-text">
+      <img class="image5" src="../assets/star.svg" alt="visual" />
+      <h2 class="title">Hello</h2>
+      <img class="image5 bottom-star" src="../assets/star.svg" alt="visual" />
+      <p>
+        I'm passionate about crafting experiences that are engaging,
+        accessible, and user-centric.
+      </p>
+    </div>
+    <section id="visual">
+      <div class="image-container1">
+        <img class="image3" src="../assets/Anand.jpeg" alt="visual" />
+
+        <img class="image4" src="../assets/file 3.jpg" alt="visual" />
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+
+      <div class="project-wrapper">
+
+        <div class="card-small">
+          <!-- <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://mrtownboy.github.io/Alco-Very/'">
+              Live Demo
+            </button>
+          </div> -->
+          <img src="alcovery1.jpg" alt="Project 2" class="project-img" width="800" height="422" />
+
+
+          <h2 class="card-title">Alcovery - Online Alcohol Delivery</h2>
+        </div>
+        <div class="card-medium">
+          <!-- <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href=https//github.com/mrtownboy/MazeFindingPython">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Read Me
+            </button>
+          </div> -->
+          <img src="maze.jpg" alt="Project 3" class="project-img" width="800" height="422" />
+          <h2 class="card-title">Maze Finding - Python</h2>
+
+        </div>
+      </div>
+      <div class="card-large">
+        <!-- <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://mrtownboy.github.io/2D-Globe/'">
+            Live Demo
+          </button>
+        </div> -->
+        <img src="traffic.jpg" alt="Project 1" class="project-img" width="800" height="422" />
+        <h2 class="card-title">
+          Immersive Analytics for Geospatial Visualisation - Dissertation Project
+        </h2>
+
+      </div>
+    </section>
+  </div>
+
+  <section id="contact">
+    <h1 class="title">Get in touch..</h1>
+    <div class="contact-info-container">
+      <div class="spotify-box">
+        <iframe style="border-radius: 12px"
+          src="https://open.spotify.com/embed/playlist/6asQjzZtJiVml5NoOOu6N5?utm_source=generator" width="100%"
+          height="152" frameborder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="email-linkedin-box">
+        <div class="contact-info">
+          <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p>
+            <a href="mailto:anandkadam19@outlook.com">anandkadam19@outlook.com</a>
+          </p>
+        </div>
+        <div class="contact-info">
+          <img src="../assets/cell-phone.png" alt="cellphone icon" class="icon contact-icon linkedin-icon" />
+          <p>
+            +44(0)7787803131
+          </p>
+        </div>
+        <div class="contact-info">
+          <img src="../assets/location.png" alt="location icon" class="icon contact-icon linkedin-icon" />
+          <p>
+            CF10 1FN, Cardiff, United Kingdom.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <p>
+      Designed and developed with ❤ by Anand Kadam. ©2024 All rights reserved.
+    </p>
+  </footer>
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const stars = document.querySelectorAll(".image5, .image5.bottom-star");
+      let timeout;
+
+      document.addEventListener("mousemove", function () {
+        clearTimeout(timeout);
+
+        timeout = setTimeout(function () {
+          stars.forEach(function (star) {
+            star.style.height = "30px";
+            star.style.opacity = "1";
+          });
+        }, 15);
+      });
+    });
+  </script>
+  <script>
+    function toggleMenu() {
+      const menuLinks = document.querySelector(".menu-links");
+      menuLinks.classList.toggle("open");
+    }
+  </script>
+  <script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=a3f37dec-3a96-48a7-8fb7-eb15a5663020"></script>
+  <!-- End of mrtownboy Zendesk Widget script -->
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>
