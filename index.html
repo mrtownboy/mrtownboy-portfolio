@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <main class="main-wrapper">
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+
+          <li><a href="work.html">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#chat">Chat now</a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="index.html">Anand Kadam</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="work.html" onclick="toggleMenu()">work</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="myy.jpg" alt="AK profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anand Kadam</h1>
+        <p class="section__text__p2">IT Graduate</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('resume.pdf')">
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="linkedin.png" alt="My LinkedIn profile" class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mrtownboy/'" />
+          <img src="github.png" alt="My Github profile" class="icon"
+            onclick="location.href='https://github.com/mrtownboy'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="text-container">
+            <p class="about-text">
+              "As a recent computer science graduate with a Master's degree, I
+              possess a solid foundation in programming, particularly in
+              Python, and have hands-on experience with front-end technologies
+              like HTML, CSS, and JavaScript. My proficiency extends to
+              database management using MySQL, and I am adept at utilizing
+              tools such as Visual Studio, Tableau, and GitHub."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="abc">
+      <p class="more-about-me">
+        I believe we should leave this Earth as good as or better than we
+        found it for future generations; my goal is to contribute to those
+        ideals in whatever way I can. If you feel the same, I'd love to talk.
+      </p>
+    </section>
+    <section id="picture">
+      <div class="image-container">
+        <img class="image1" src="/assets/IMG_4958.jpg" alt="IMG_4958" />
+
+        <img class="image2" src="/assets/FullSizeRender_3.jpg" alt="FullSizeRender_3" />
+      </div>
+    </section>
+    <section id="myself">
+      <div class="text-container">
+        <p>
+          Before immersing myself in the ever-evolving world of modern
+          technology, I was an avid internet enthusiast. From a young age, I
+          found myself captivated by the mysteries of computers—how games are
+          developed, the intricacies of the internet—fueling my insatiable
+          curiosity.
+        </p>
+        <p>
+          My passion for these technological wonders led me to understand how
+          various technologies play harmoniously together. Over the years,
+          I've nurtured and refreshed this skill set, creating a foundation
+          that I continue to build upon. My side project work serves as a
+          playground for my insatiable curiosity about new technologies and a
+          genuine interest in understanding how the web is shaping our future.
+          It's not just work; it's a journey to explore the frontiers of
+          innovation.
+        </p>
+      </div>
+    </section>
+    <section id="about1">
+      <div class="section-container1">
+        <div class="about-details-container1">
+          <div class="text-container1">
+            <p class="about-text1">
+              "Through coursework and collaborative projects, I've honed my
+              skills in teamwork, problem-solving, and analytical thinking.
+              Despite being early in my career, I am enthusiastic about
+              applying these skills in a professional setting, driven by a
+              passion for technology and a commitment to continuous learning."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="myself1">
+      <div class="text-container1">
+        <p>
+          Beyond the digital world, you'll find me embracing life. I enjoy the
+          freedom of travel, discovering new places that broaden my
+          perspective. Picture this: sipping coffee in a serene spot,
+          accompanied by a melody of songs playing softly in the
+          background—these are moments I treasure. Volunteering is another
+          facet of my life, providing a sense of fulfillment as I contribute
+          to the community. Most importantly, I cherish the presence of my
+          loved ones, who are an integral part of my journey.
+        </p>
+        <p>Let's connect and explore the boundless possibilities ahead!</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Get in touch..</h1>
+      <div class="contact-info-container">
+        <div class="spotify-box">
+          <iframe style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/6asQjzZtJiVml5NoOOu6N5?utm_source=generator" width="100%"
+            height="152" frameborder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="email-linkedin-box">
+          <div class="contact-info">
+            <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+            <p>
+              <a href="mailto:anandkadam19@outlook.com">anandkadam19@outlook.com</a>
+            </p>
+          </div>
+          <div class="contact-info">
+            <img src="../assets/cell-phone.png" alt="cellphone icon" class="icon contact-icon linkedin-icon" />
+            <p>+44(0)7787803131</p>
+          </div>
+          <div class="contact-info">
+            <img src="../assets/location.png" alt="location icon" class="icon contact-icon linkedin-icon" />
+            <p>CF10 1FN, Cardiff, United Kingdom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Designed and developed with ❤ by Anand Kadam. ©2024 All rights reserved.
+    </p>
+  </footer>
+
+
+  </script>
+  <script>
+    function toggleMenu() {
+      const menuLinks = document.querySelector(".menu-links");
+      menuLinks.classList.toggle("open");
+    }
+  </script>
+  <!-- Start of mrtownboy Zendesk Widget script -->
+  <script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=a3f37dec-3a96-48a7-8fb7-eb15a5663020"></script>
+  <!-- End of mrtownboy Zendesk Widget script -->
+</body>
+
+</html>
